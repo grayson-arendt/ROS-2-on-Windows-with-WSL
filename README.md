@@ -1,6 +1,6 @@
 
 While dual-booting provides a more integrated ROS 2 experience, you can install and run ROS 2 Humble using Windows Subsystem for Linux (WSL2). This guide will walk you through the steps.
-## **Install WSL and Ubuntu 22.04**
+## **Install Ubuntu 22.04 for WSL**
 
 1. Open PowerShell as Administrator:
     - Search for PowerShell in the Start menu.
