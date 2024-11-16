@@ -33,7 +33,7 @@ sudo apt install ros-humble-desktop ros-dev-tools
 ```
 
 ### Optimize WSL for Performance
-##### Check CPU Cores and RAM
+#### Check CPU Cores and RAM
 1. Open PowerShell and check the number of CPU cores:
 ```powershell
 wmic cpu get NumberOfCores,NumberOfLogicalProcessors
@@ -43,7 +43,7 @@ wmic cpu get NumberOfCores,NumberOfLogicalProcessors
 ```powershell
 [math]::Round((([string](systeminfo | findstr /C:"Total Physical Memory")).Split(":")[-1].Trim() -replace "[^0-9]", "") / 1024, 2)
 ```
-##### Configure WSL Resources
+#### Configure WSL Resources
 1. Open the WSL configuration file in Notepad:
 ```powershell
 notepad $env:USERPROFILE\.wslconfig
@@ -51,7 +51,7 @@ notepad $env:USERPROFILE\.wslconfig
 
 2. If prompted, confirm to create the file. Add the following settings (adjust values based on your hardware):
 ```txt
-[wsl2] 
+[wsl2]
 memory=16GB # Allocate 16GB of RAM (50% of total RAM)
 processors=8 # Use 8 logical processors (Total number of cores)
 swap=8GB # Set 8GB of swap space (25% of total RAM)
