@@ -1,10 +1,10 @@
 
 While dual-booting provides a more integrated ROS 2 experience, you can install and run ROS 2 Humble using Windows Subsystem for Linux (WSL2). This guide will walk you through the steps.
-### Install WSL and Ubuntu 22.04
+### **Install WSL and Ubuntu 22.04**
 
-1. Open **PowerShell as Administrator**:
-    - Search for **PowerShell** in the Start menu.
-    - Right-click and select **Run as Administrator**.
+1. Open PowerShell as Administrator:
+    - Search for PowerShell in the Start menu.
+    - Right-click and select Run as Administrator.
 
 2. Install Ubuntu 22.04:
 ```powershell
@@ -15,7 +15,7 @@ wsl --install -d Ubuntu-22.04
 	- Create a **username** and **password** when prompted.
 	- Once complete, your terminal will switch to a Bash shell, allowing you to run Linux commands.
   
-### Install ROS 2 Humble
+### **Install ROS 2 Humble**
 
 1. Add ROS 2 repositories:
 ```bash
@@ -33,7 +33,7 @@ sudo apt upgrade -y
 sudo apt install ros-humble-desktop ros-dev-tools
 ```
 
-### Optimize WSL for Performance
+### **Optimize WSL for Performance**
 #### Check CPU Cores and RAM
 1. Open PowerShell and check the number of CPU cores:
 ```powershell
@@ -64,7 +64,7 @@ wsl --shutdown
 wsl
 ```
 
-###  Set Up ROS 2 Environment
+### **Set Up ROS 2 Environment**
 1. Navigate to the Home Directory:
 ```bash
 cd ~
@@ -81,7 +81,7 @@ echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-### Clone and Build the Lunabotics-2025 Repository
+### **Clone and Build the Lunabotics-2025 Repository**
 1. Follow the [Lunabotics-2025 GitHub repository](https://github.com/grayson-arendt/Lunabotics-2025) instructions to:
 	- Clone the repository.
 	- Install dependencies.
