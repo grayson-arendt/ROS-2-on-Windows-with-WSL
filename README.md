@@ -12,7 +12,7 @@ wsl --install -d Ubuntu-22.04
 ```
 
 3. During the installation:
-	- Create a **username** and **password** when prompted.
+	- Create a username and password when prompted.
 	- Once complete, your terminal will switch to a Bash shell, allowing you to run Linux commands.
   
 ## **Install ROS 2 Humble**
