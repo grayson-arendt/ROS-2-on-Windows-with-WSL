@@ -36,7 +36,7 @@ sudo apt install ros-humble-desktop ros-dev-tools
 #### Check CPU Cores and RAM
 1. Open PowerShell and check the number of CPU cores:
 ```powershell
-wmic cpu get NumberOfCores,NumberOfLogicalProcessors
+wmic cpu get NumberOfCores
 ```
 
 2. Check your total RAM in GB:
